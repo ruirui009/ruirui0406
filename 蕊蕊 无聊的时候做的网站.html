@@ -1,0 +1,191 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐！亲爱的弟弟</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #333;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        /* 生日标题样式 */
+        .birthday-header {
+            text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+        }
+        
+        .birthday-title {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 3px 3px 0 #ff6b6b, 6px 6px 0 #ff8e8e;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+        
+        .birthday-subtitle {
+            font-size: 1.5rem;
+            color: #fff;
+            opacity: 0.9;
+        }
+        
+        /* 照片展示区 */
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .photo-frame {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            position: relative;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .photo-frame:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+        
+        .photo-frame img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s;
+        }
+        
+        .photo-frame:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* 祝福语区域 */
+        .wishes-section {
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .wish-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-left: 5px solid #ff6b6b;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 0 10px 10px 0;
+            transition: all 0.3s;
+        }
+        
+        .wish-item:hover {
+            transform: translateX(10px);
+            box-shadow: 5px 5px 0 rgba(255,107,107,0.3);
+        }
+        
+        /* 蛋糕动画 */
+        .cake-container {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        /* 动画效果 */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .birthday-title {
+                font-size: 2rem;
+                text-shadow: 2px 2px 0 #ff6b6b, 4px 4px 0 #ff8e8e;
+            }
+            
+            .photo-frame {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .cake-container {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-header">
+        <h1 class="birthday-title">生日快乐！虽然不知道冯世博生日是几月几号</h1>
+        <p class="birthday-subtitle">你姐姐我忙一晚上，做了个网页，可把我累死了</p >
+    </div>
+    
+    <div class="cake-container">
+        🎂
+    </div>
+    
+    <div class="photo-gallery">
+        <div class="photo-frame">
+            < img src=""C:\Users\Lenovo\Desktop\蕊蕊练习用的代码\微信图片_20250406192115.jpg"" alt="弟弟照片">
+        </div>
+        <!-- 可以添加更多照片框 -->
+        <div class="photo-frame">
+            < img src="""C:\Users\Lenovo\Desktop\冯世博照片.jpg""" alt="弟弟照片">
+        </div>
+    </div>
+    
+    <div class="wishes-section">
+        <div class="wish-item">
+            <h3>成绩变好</h3>
+            <p>希望冯世博考上二高，成绩理想，未来成为世界首富给我钱花</p >
+        </div>
+        <div class="wish-item">
+            <h3>学业进步</h3>
+            <p>新的一岁，学习更上一层楼，但也要记得劳逸结合哦！</p >
+        </div>
+        <div class="wish-item">
+            <h3>长高不长胖</h3>
+            <p>上天呀，让冯世博长高一点，但不能长胖，也能变胖一点吧，最好把我的肉分给他</p >
+        </div>
+        <div class="wish-item">
+            <h3>健康平安</h3>
+            <p>冯世博好好攒钱，等我回去了请我吃烤肉！</p >
+        </div>
+    </div>
+    
